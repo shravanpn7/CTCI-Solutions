@@ -17,14 +17,4 @@ class Stack:
     def size(self):
         return len(self.items)
 
-    def __str__(self):
-        length = self.size()
-        i=0
-        nodestore= []
-        if length != 0:
-            while i <= length:
-                nodestore.append(str(self.pop()))
-                return "Stack  [ " + "->".join(nodestore) + " ]"
-        return "Stack  []"
-
 
