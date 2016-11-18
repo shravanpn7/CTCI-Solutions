@@ -21,6 +21,16 @@ def palin(string1):
             print "Not palindrome"
         else:
             print "its palindrome"
+    else:
+        odd_count = 0
+        for i in char_count.values():
+            if i % 2 != 0:
+                odd_count += 1
+        if odd_count >= 1:
+            print "Not palindrome"
+        else:
+            print "its even palindrome"
+
 
 
 
