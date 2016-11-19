@@ -17,3 +17,19 @@ def str_compression(in_str):
 
 
 print str_compression("aaabb")
+
+
+def str_comp(in_str):
+    count_compression = 0
+    compressed_str = ""
+    for i, v in enumerate(in_str):
+        count_compression += 1
+        if i+1 >= len(in_str) or in_str[i+1] != v:
+            compressed_str += v + str(count_compression)
+            count_compression = 0
+    if len(compressed_str) == len(in_str):
+        return in_str
+    else:
+        return compressed_str
+
+print str_comp("aaabb")
